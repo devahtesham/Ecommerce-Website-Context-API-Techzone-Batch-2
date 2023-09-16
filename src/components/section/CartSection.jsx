@@ -5,7 +5,7 @@ import { CartItemsContext } from '../../context/CartItemsContext'
 const CartSection = () => {
 
     const { cartItems } = useContext(CartItemsContext);
-    console.log('cartItems', cartItems);
+    // console.log('cartItems', cartItems);
     return (
         <>
             <div className='container mt-5'>

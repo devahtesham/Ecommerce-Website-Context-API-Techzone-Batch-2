@@ -10,7 +10,7 @@ const Card = ({product,className}) => {
 
     // Add to cart
     const addToCartHandler = (product)=>{
-        console.log("I am calling ");
+        // console.log("I am calling ");
         incrementQuantity()
         setCartItems([...cartItems,product])
         // getQuantity(itemsQuantity)
@@ -36,7 +36,7 @@ const Card = ({product,className}) => {
                         <p className="card-text">{shortDescription}</p>
                         <div className=' pb-2 pe-2 d-flex align-items-center justify-content-between'>
                             <button className='btn btn-primary' onClick={()=>{
-                                buttonHandler(product,index)
+                                buttonHandler(product)
                             }}>Add To Cart</button>
                             <h6 className='m-0'>RS {price}</h6>
                         </div>
